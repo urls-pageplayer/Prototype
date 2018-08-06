@@ -19,7 +19,7 @@
     
       @-webkit-keyframes slide {
         0% { background-position: 50% 50%; }
-        100% { background-position: 50% 50%; }
+        100% { background-position: 300% 300%; }
 }
     
     .anim {
@@ -32,7 +32,8 @@
      .webkit-anim {
       transition-duration: 10s;
       transition-delay: 5s;
-      
+      -webkit-animation-iteration-count: infinite;
+       
       background-position: 50% 50%;
       
       -webkit-animation-name: slide;
