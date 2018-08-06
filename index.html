@@ -13,7 +13,9 @@
       background-image: url('https://services.github.com/on-demand/images/about/forktocat.jpg');
       background-repeat: no-repeat;
       background-position: 50% 50%;
-      
+    }
+    
+    .anim { 
       transition-property: background-position;
       transition-duration: 5s;
       
@@ -30,11 +32,11 @@
 </head>
 <body>
 
-<div id="scr1" style="opacity: .45">Screen1</div>
+<div id="scr1" class="anim" style="opacity: .45">Screen1</div>
 <div id="scr2" style="opacity: .45">Screen2</div>
 
-<div id="ref1" style="opacity: .45">Reflection1</div>
-<div id="ref2" style="opacity: .45">Reflection2</div>
+<div id="ref1" class="anim" style="opacity: .45">Reflection1</div>
+<div id="ref2" class="anim" style="opacity: .45">Reflection2</div>
 
 </body>
 </html>
