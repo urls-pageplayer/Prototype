@@ -27,12 +27,18 @@
       transition-delay: 3s;
       
       background-position: 200% top;
+     
+    }
+     .webkit-anim {
+      transition-duration: 10s;
+      transition-delay: 3s;
+      
+      background-position: 200% top;
       
       -webkit-animation-name: slide;
     -webkit-animation-duration: 10s;
       -webkit-animation-delay: 3s;
     }
-    
   
     
     #scr1 { transform: rotate3d(-1, 0, 0, 45deg); }
@@ -45,11 +51,11 @@
 </head>
 <body>
 
-<div id="scr1" class="anim" style="opacity: .45">Screen1</div>
+<div id="scr1" class="anim webkit-anim" style="opacity: .45">Screen1</div>
 <div id="scr2" style="opacity: .45">Screen2</div>
 
-<div id="ref1" class="anim" style="opacity: .45">Reflection1</div>
-<div id="ref2" class="anim" style="opacity: .45">Reflection2</div>
+<div id="ref1" class="anim webkit-anim" style="opacity: .45">Reflection1</div>
+<div id="ref2" class="anim webkit-anim" style="opacity: .45">Reflection2</div>
 
 </body>
 </html>
