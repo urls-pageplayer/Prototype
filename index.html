@@ -44,20 +44,21 @@
     #scr1 { transform: rotate3d(-1, 0, 0, 45deg); }
     #scr2 { background-image: url('https://assets-cdn.github.com/images/icons/emoji/octocat.png'); 
             top: 380px; 
-            position: relative;
+            
             background-repeat: no-repeat;
             background-alignment: center;
           }
     
-    #reflections { 
-      position: absolute;
+    #reflections {
       top: calc(200%);
     }
     #ref1 { transform: rotate3d(1, 0, 0, 45deg); 
             transform: rotate3d(0, 0, 1, 180deg) skew(3deg);
+            position: relative;
           }
     #ref2 { transform: rotate3d(1, 0, 0, 35deg) scale(1.2) translate(.6); 
             transform: rotate3d(0, 0, 1, 180deg) skew(-10deg);
+            position: absolute;
           }
     
     
