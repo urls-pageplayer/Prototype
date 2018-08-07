@@ -6,7 +6,6 @@
     div {
       text-size: 200px;
       overflow:hidden;
-      
       width: 100%;
       height: 480px;
       display: block;
@@ -47,8 +46,7 @@
           }
     
     #reflections {
-     position: relative;
-      top: 0px;
+     
     }
     #ref1 { transform: rotate3d(1, 0, 0, 45deg); 
             transform: rotate3d(0, 0, 1, 180deg) skew(3deg);
@@ -56,8 +54,6 @@
           }
     #ref2 { transform: rotate3d(1, 0, 0, 35deg) scale(1.2) translate(.6); 
             transform: rotate3d(0, 0, 1, 180deg) skew(-10deg);
-      
-      position: absolute;
           }
     
     
@@ -65,11 +61,11 @@
 </head>
 <body>
 
-<div id="scr1" class="anim webkit-anim" style="opacity: 1.0">Screen1</div>
-<div id="scr2" style="opacity: 1.0">Screen2</div>
-
-<div id="ref1" class="reflections anim webkit-anim" style="opacity: .45">Reflection1</div>
-<div id="ref2" class="reflections anim webkit-anim" style="opacity: .25">Reflection2</div>
+<div id="scr1" class="anim webkit-anim" style="opacity: 1.0" title="video1"></div>
+<div id="scr2" style="opacity: 1.0" title="video2">
+  <div id="ref1" class="reflections anim webkit-anim" style="opacity: .45" title="reflection of video 1"></div>
+  <div id="ref2" class="reflections anim webkit-anim" style="opacity: .25" title="second reflection of video 1"></div>
+</div>
 
 </body>
 </html>
