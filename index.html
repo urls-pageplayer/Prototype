@@ -19,7 +19,7 @@
     
       @-webkit-keyframes slide {
         from { background-position: 50% 50%; }
-        to { background-position: 50% 354%; }
+        to { background-position: 50% 356%; }
 }
     
     .anim {
@@ -47,11 +47,14 @@
             background-repeat: no-repeat;
             background-alignment: center;
           }
-    #ref1 { transform: rotate3d(1, 0, 0, 45deg); top: 400px;
+    
+    #reflections { 
+      top: 50%;
+    }
+    #ref1 { transform: rotate3d(1, 0, 0, 45deg); 
             transform: rotate3d(0, 0, 1, 180deg) skew(3deg);
           }
     #ref2 { transform: rotate3d(1, 0, 0, 35deg) scale(1.2) translate(.6); 
-            top: 400px;
             transform: rotate3d(0, 0, 1, 180deg) skew(-10deg);
           }
     
@@ -63,8 +66,8 @@
 <div id="scr1" class="anim webkit-anim" style="opacity: .45">Screen1</div>
 <div id="scr2" style="opacity: 1.0">Screen2</div>
 
-<div id="ref1" class="anim webkit-anim" style="opacity: .45">Reflection1</div>
-<div id="ref2" class="anim webkit-anim" style="opacity: .45">Reflection2</div>
+<div id="ref1" class="reflections anim webkit-anim" style="opacity: .45">Reflection1</div>
+<div id="ref2" class="reflections anim webkit-anim" style="opacity: .45">Reflection2</div>
 
 </body>
 </html>
