@@ -38,7 +38,9 @@
     }
   
     
-    #scr1 { transform: rotate3d(-1, 0, 0, 45deg); }
+    #scr1 { transform: rotate3d(-1, 0, 0, 45deg); 
+            transform: rotate3d(0, 0, 1, 180deg)
+    }
     #scr2 { background-image: url('https://enterprise.github.com/assets/aws/jetpack-octocat-clouds-ab3c258e0b58dc8354ebb57139827a23dcf3849d14ee8c6795a67a7bcfde9fb4.jpg'); 
             background-repeat: no-repeat;
             background-alignment: center;
@@ -46,7 +48,7 @@
           }
     
     #ref1 { transform: rotate3d(1, 0, 0, 45deg); 
-            transform: rotate3d(0, 0, 1, 180deg) skew(3deg);
+            transform: skew(3deg);
             
           }
     #ref2 { transform: rotate3d(1, 0, 0, 35deg) scale(1.2) translate(.6); 
