@@ -12,10 +12,10 @@
       background-position: 50% 50%;
     }
     
-      @-webkit-keyframes slide {
-        from { background-position: 50% 50%; }
-        to { background-position: 50% 542%; }
-}
+    @-webkit-keyframes slide {
+      from { background-position: 50% 50%; }
+      to { background-position: 50% 542%; }
+    }
     
     .anim {
       /* NOT TESTED //TODO: make it run on ie */
@@ -26,8 +26,8 @@
       background-position: 200% top;
      
     }
-     .webkit-anim {
-      /* NOTE: ; -webkit-box-reflect: below; */ 
+    
+    .webkit-anim {
       -webkit-animation-iteration-count: infinite;
        
       background-position: 50% 50%;
@@ -38,13 +38,10 @@
       -webkit-animation-delay: 2s;
     }
   
-    
     #scr1 { 
             transform: rotateX(65deg) rotateZ(180deg);
-            border: 6px dotted black;
-            border-radius: 5px;
             width: 99%;
-    }
+          }
     #scr2 { background-image: url('https://services.github.com/on-demand/images/about/forktocat.jpg'); 
             background-repeat: no-repeat;
             background-alignment: center;
@@ -52,19 +49,16 @@
             position: relative;
             top: -160px;
           }
-    
     #ref1 { transform: rotate3d(1, 0, 0, 45deg); 
             transform: skew(3deg);
           }
     #ref2 { transform: rotate3d(1, 0, 0, 35deg) scale(1.2) translate(.6); 
             transform: skew(-10deg);
           }
-    
-    
   </style>
 </head>
 <body>
-  <div id="scr1" class="anim webkit-anim" style="opacity: 1.0;" title="video1"></div>
+  <div id="scr1" class="anim webkit-anim" style="opacity: 1.0; -webkit-box-reflect: below;" title="video1"></div>
   <div id="scr2" style="opacity: 1.0;" title="video2">
     <div id="ref1" class="anim webkit-anim" style="opacity: .75" title="reflection of video 1">
       <div id="ref2" class="anim webkit-anim" style="opacity: .35" title="second reflection of video 1"></div> 
