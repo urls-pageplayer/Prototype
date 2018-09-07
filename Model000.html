@@ -15,21 +15,21 @@
       ctx.arc(400, 250, 10, 0, 2 * Math.PI);
       ctx.stroke(); 
     
-      /* first video output */
-      ctx.strokeStyle = 'black';
-      ctx.beginPath();
-      ctx.moveTo(300, 150);
-      ctx.lineTo(390, 230);
-      ctx.stroke();
-    
       /* first video output rotation domain */
       ctx.fillStyle = 'gray';
       ctx.strokeStyle = 'lightgray';
       ctx.beginPath();
       ctx.moveTo(400, 150);
-      ctx.lineTo(390, 230);
-      ctx.lineTo(230, 250);
+      ctx.lineTo(400, 230);
+      ctx.lineTo(230, 230);
       ctx.fill();
+      ctx.stroke();
+    
+      /* first video output */
+      ctx.strokeStyle = 'black';
+      ctx.beginPath();
+      ctx.moveTo(300, 150);
+      ctx.lineTo(390, 230);
       ctx.stroke();
      
      /* second video output */
