@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Model Schema</tile>
+<title>Model Schema</title>
+<script>
+  document.addEventListener("onload", function() { 
+  
+      var canvas = document.getElementById("ProjectionSV");
+      var ctx = canvas.getContext('2d');
+  
+      /* the reference point of the model */
+      ctx.strokeStyle = 'blue';
+      ctx.lineWidth = 5;
+      ctx.beginPath();
+      ctx.arc(300, 150, 25, 0, 2 * Math.PI);
+    
+  }, false);
+  </script>
 </head>
 <body>
 
-<canvas>
+<canvas id="ProjectionSV" width="480" height="320">
+  <!-- //todo: ADD FALLBACK IMAGE OF THE MODEL -->
+  </canvas>
 
 </body>
 </html>
