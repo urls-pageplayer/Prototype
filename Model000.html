@@ -16,6 +16,10 @@
       ctx.stroke(); 
     
       /* first video output rotation domain */
+      ctx.beginPath();
+      ctx.arc(400, 230, 50, Math.PI, 1.5 * Math.PI);
+      ctx.fill();
+
       ctx.lineWidth = 3;
       ctx.fillStyle = 'lightgray';
       ctx.strokeStyle = 'gray';
