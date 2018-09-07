@@ -16,8 +16,9 @@
       ctx.stroke(); 
     
       /* first video output rotation domain */
-      ctx.fillStyle = 'gray';
-      ctx.strokeStyle = 'lightgray';
+      ctx.lineWidth = 3;
+      ctx.fillStyle = 'lightgray';
+      ctx.strokeStyle = 'gray';
       ctx.beginPath();
       ctx.moveTo(400, 150);
       ctx.lineTo(400, 230);
@@ -26,6 +27,7 @@
       ctx.stroke();
     
       /* first video output */
+      ctx.lineWidth = 5;
       ctx.strokeStyle = 'black';
       ctx.beginPath();
       ctx.moveTo(300, 150);
@@ -33,14 +35,17 @@
       ctx.stroke();
      
       /* second video output rotation domain */
-      ctx.fillStyle = 'gray';
-      ctx.strokeStyle = 'lightgray';
+      ctx.lineWidth = 3;
+      ctx.fillStyle = 'lightgray';
+      ctx.strokeStyle = 'gray';
       ctx.beginPath();
       ctx.moveTo(360, 260);
       ctx.lineTo(250, 310);
       ctx.lineTo(360, 310);
       ctx.fill();
       ctx.stroke();
+   
+      ctx.lineWidth = 5;
     
      /* second video output */
       ctx.strokeStyle = 'black';
