@@ -75,9 +75,18 @@
       ctx.strokeStyle = 'pink';
       ctx.lineWidth = 5;
       ctx.beginPath();
-      ctx.arc(100, 200, 10, 0, 2 * Math.PI);
+      ctx.arc(100, 150, 10, 0, 2 * Math.PI);
       ctx.stroke(); 
      
+      ctx.lineWidth = 3;
+      ctx.fillStyle = 'lightgray';
+      ctx.strokeStyle = 'gray';
+      ctx.beginPath();
+      ctx.moveTo(200, 50);
+      ctx.lineTo(100, 150);
+      ctx.lineTo(200, 200);
+      ctx.fill();
+      ctx.stroke();
     
     
   }, false);
